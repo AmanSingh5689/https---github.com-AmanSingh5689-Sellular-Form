@@ -90,7 +90,7 @@ label {
 /* FOCUS STATE */
 /****************/
 /* input:focus {
- */
+  */
 
 input:focus,
 textarea:focus {
@@ -106,4 +106,18 @@ textarea:focus {
   color: rgb(67, 65, 65);
 
   background: rgb(85, 199, 182);
+}
+
+/****************/
+/* mobile number */
+/****************/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
