@@ -61,9 +61,6 @@
 
         <label for="mobile">Mobile</label>
         <input
-          min="0"
-          max="9999999999"
-          maxlength="10"
           type="number"
           id="mobile"
           name="Mobile"
@@ -80,12 +77,6 @@
       const collegeMail = document.getElementById("collegeMail");
       const college = document.getElementById("college");
       const suggestions = document.getElementById("suggestions");
-      document.querySelectorAll('input[type="number"]').forEach((input) => {
-        input.oninput = () => {
-          if (input.value.length > input.maxLength)
-            input.value = input.value.slice(0, input.maxLength);
-        };
-      });
       const emptyField = function () {
         name.value = "";
         mobile.value = "";
